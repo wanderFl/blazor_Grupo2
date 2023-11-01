@@ -1,0 +1,40 @@
+﻿@page "/"
+
+<PageTitle>Index</PageTitle>
+
+<h1>Hello, world!</h1>
+
+Welcome to your new app.
+
+<SurveyPrompt Title="How is Blazor working for you?" />
+@page "/razor"
+@* Sxis *@
+<h3>Razor Syntax </h3
+    @* exp *@
+<span>@(2+2)</span>
+<span>@@usuario</span>
+@* im *@
+<p>@DateTime.Now</p> 
+
+<p>hoy la fecha es:(@DateTime.Now-TimeSpan.FromDays(30))</p> 
+@* blo *@
+@{
+    var codeBlockVariable = "este es el valor de la variable";
+} 
+<span>@codeBlockVariable</span>
+
+
+@{
+    codeBlockVariable = "este es el valor actualizado de la variable";
+}
+<span>@codeBlockVariable</span> 
+
+if (clientes.Count>0) {
+  <p>hay algunos clientes</p>
+} else {
+   <p>no hay  clientes</p>
+} 
+
+@code {
+
+    } 
